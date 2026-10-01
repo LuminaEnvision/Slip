@@ -1,0 +1,33 @@
+{
+  "name": "slip",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Private receipt book for USDG on Robinhood Chain. Pay someone — a salary, a week, a bill you owe — or send one link to get paid for a service. The book and the CSV stay behind a key. That link shows only that payment. A paid slip keeps the transaction hash. No account. 6 decimals. Gas is ETH.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "tsx --test lib/money.test.ts lib/slug.test.ts lib/fee.test.ts lib/match-transfer.test.ts lib/receipts.test.ts",
+    "deploy:pay": "tsx scripts/deploy-slip-pay.ts"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.90.2",
+    "better-sqlite3": "^12.4.1",
+    "next": "^15.5.4",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "server-only": "^0.0.1",
+    "viem": "^2.37.6",
+    "wagmi": "^2.17.5",
+    "web-push": "^3.6.7"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^22.18.6",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "@types/web-push": "^3.6.4",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}

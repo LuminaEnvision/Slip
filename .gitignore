@@ -1,0 +1,15 @@
+node_modules
+.next
+out
+cache/
+foundry-lib/
+.vercel
+*.tsbuildinfo
+.env
+.env*.local
+data/*.db
+data/*.db-journal
+data/*.db-wal
+data/*.db-shm
+data/vapid.json
+data/book-secret
